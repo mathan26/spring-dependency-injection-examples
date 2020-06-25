@@ -1,11 +1,13 @@
 package com.github.mathan26.springdependencyinjectionexamples.controllers;
 
 import com.github.mathan26.springdependencyinjectionexamples.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
-public class ConstrctorInjectedController {
+@Controller
+public class ConstructorInjectedController {
     public GreetingService greetingService;
 
-    public ConstrctorInjectedController(GreetingService greetingService) {
+    public ConstructorInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 

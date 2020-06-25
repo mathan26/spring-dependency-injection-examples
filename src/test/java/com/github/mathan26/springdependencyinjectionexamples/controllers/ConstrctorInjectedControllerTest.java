@@ -4,14 +4,12 @@ import com.github.mathan26.springdependencyinjectionexamples.services.GreetingSe
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class ConstrctorInjectedControllerTest {
 
-    ConstrctorInjectedController controller;
+    ConstructorInjectedController controller;
     @BeforeEach
     void setUp() {
-        controller=new ConstrctorInjectedController(new GreetingServiceImpl());
+        controller=new ConstructorInjectedController(new GreetingServiceImpl());
     }
 
     @Test
